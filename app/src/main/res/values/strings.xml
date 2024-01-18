@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">recuperacionDesarrolloInterfaces1</string>
+    <string name="toolbar1">Crazy Layouts</string>
+    <string name="hint1">Nombres</string>
+    <string name="hint2">Apellidos</string>
+    <string name="txt1">Estado Civil</string>
+    <string name="txt2">Cargo</string>
+
+    <array name="spinner1">
+        <item></item>
+        <item>Casado</item>
+        <item>Soltero</item>
+        <item>Viudo</item>
+    </array>
+
+    <array name="spinner2">
+        <item></item>
+        <item>Ventas</item>
+        <item>Informática</item>
+        <item>Jardinería</item>
+    </array>
+
+</resources>

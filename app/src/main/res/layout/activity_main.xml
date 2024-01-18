@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/toolbar1"
+        app:titleTextColor="@color/white"
+        app:menu="@menu/menu1"/>
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="30dp"
+        android:hint="@string/hint1"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/hint2"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt1"
+        android:layout_below="@+id/edt2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gris"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt2"
+        android:layout_below="@+id/edt2"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginLeft="80dp"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gris"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="30dp"
+        android:entries="@array/spinner1"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="200dp"
+        android:entries="@array/spinner2"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/textView2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"/>
+
+
+</RelativeLayout>
